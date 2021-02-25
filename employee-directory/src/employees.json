@@ -1,0 +1,18 @@
+[{"id":1,
+    "first_name":"Antonino",
+    "last_name":"Agget",
+    "email":"aagget0@ebay.com",
+    "gender":"Male",
+    "title":"Engineer",
+    "department":"Product Management",
+    "avatar":"https://robohash.org/architectocumquecupiditate.jpg?size=50x50&set=set1"},
+{"id":2,
+    "first_name":"Hazlett",
+    "last_name":"Antonikov",
+    "email":"hantonikov1@yellowbook.com",
+    "gender":"Male",
+    "title":" Sales",
+    "department":"Accounting",
+    "avatar":"https://robohash.org/explicaboconsequaturomnis.png?size=50x50&set=set1"},
+
+]

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import employees from './employees.json';
 import './App.css';
-import EmployeeRow from './EmployeeRow/index.js';
-import Footer from './Footer/index';
+import EmployeeRow from './components/EmployeeRow/index.js';
+import Footer from './components/Footer/index';
 
 class App extends Component {
 

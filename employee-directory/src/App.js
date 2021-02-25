@@ -34,7 +34,49 @@ class App extends Component {
     this.setState( { employees: sortArray, ascending: toggle } );
   }
 
-  
+  render() {
+    return (
+      <div>
+      <div className="main">
+        <h1>Weston Rose's Company Directory</h1>
+        <div className="input">
+        <input placeholder="Search by Last Name Only" type="search" onChange={e => this.handleChange(e)} name="lname" label="input field" />
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Employee Photo</th>
+              <th onClick={() => this.handleSort("first_name")}>First Name <i className="fas fa-arrows-alt-v"></i></th>
+              <th onClick={() => this.handleSort("last_name")}>Last Name <i className="fas fa-arrows-alt-v"></i></th>
+              <th>Title</th>
+              <th>Department</th>
+              <th>Email</th>
+              <th>Gender</th>
+            </tr>
+          </thead>
+          <tbody>
+            {this.state.employees.map(employeeObject => {
+              return (
+                <EmployeeRow
+                  key={employeeObject.id}
+                  avatar={employeeObject.avatar}
+                  first_name={employeeObject.first_name}
+                  last_name={employeeObject.last_name}
+                  email={employeeObject.email}
+                  gender={employeeObject.gender}
+                  title={employeeObject.title}
+                  department={employeeObject.department}
+
+                />
+              )
+            })}
+          </tbody>
+        </table>
+        </div>
+        <Footer />  
+      </div>
+    );
+  }
 }
 
 

@@ -43,7 +43,20 @@ class App extends Component {
         <table>
          
           <tbody>
-           
+            {this.state.employees.map(employeeObject => {
+              return (
+                <EmployeeRow
+                  key={employeeObject.id}
+                  avatar={employeeObject.avatar}
+                  first_name={employeeObject.first_name}
+                  last_name={employeeObject.last_name}
+                  email={employeeObject.email}
+                  gender={employeeObject.gender}
+                  title={employeeObject.title}
+
+                />
+              )
+            })}
           </tbody>
         </table>
         </div>

@@ -1,5 +1,5 @@
 // .copyright{
 //     text-align: center;
-//     background-color: lightcoral;
+//     background-color: lightgray;
     
 // }

@@ -1,15 +1,14 @@
-import React,  {Component, components} from 'react';
+import React, { Component } from 'react';
 import employees from './employees.json';
 import './App.css';
-import EmployeeRow from './components/EmployeeRow/index.js';
-import Footer from './components/Footer/index.js';
+import EmployeeRow from './EmployeeRow/index.js';
+import Footer from './Footer/index';
 
 class App extends Component {
 
   state = { employees: employees.sort((a, b) => (a.last_name.toLowerCase() > b.last_name.toLowerCase()) ? 1 : -1), 
     ascending: true }
 
-  //This function allows users to filter by last name//
   handleChange = event => {
     let userInput = event.target.value;
       if(userInput === "") {
@@ -22,7 +21,6 @@ class App extends Component {
     this.setState({employees: result})} 
   }
 
-  //This function allows users to sort on multiple column titles.//
   handleSort = (columnTitle) => {
     let sortArray;
     const toggle = !this.state.ascending;
@@ -34,8 +32,20 @@ class App extends Component {
     this.setState( { employees: sortArray, ascending: toggle } );
   }
 
-  
+  render() {
+    return (
+      <div>
+      <div className="main">
+        <h1>M&M Company </h1>
+        <div className="input">
+        <input placeholder="Search by Last Name" type="search" onChange={e => this.handleChange(e)} name="lname" label="input field" />
+        </div>
+       
+        </div>
+        <Footer />  
+      </div>
+    );
+  }
 }
-
 
 export default App;

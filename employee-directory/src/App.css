@@ -1,62 +1,8 @@
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-
 
 body {
   width: 100%;
   height: 100%;
-  font-family: 'Roboto', sans-serif;
-}
-
-.parallax {
-  /* The image used */
-  background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
-
-  /* Full height */
-  height: 100%; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  
 }
 
 .container {
@@ -78,53 +24,19 @@ h1 {
   font-family: 'Oswald', sans-serif;
 }
 
-input[type=search] {
-  float: right;
-  width: 30px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  background-color: white;
-  background-image: url('https://cdn2.iconfinder.com/data/icons/font-awesome/1792/search-512.png');
-  background-size: 20px 20px;
-  background-position: 10px 10px; 
-  background-repeat: no-repeat;
-  padding: 12px 0px 12px 40px;
-  transition: width 0.4s ease-in-out;
-  cursor: pointer;
-}
-
-input[type=search]:focus {
-  width: 100%;
-}
-
-table {
-  width: 100%;
-  overflow-x: scroll;
-}
-
-thead {
-  height: 50px;
-  color: antiquewhite;
-  padding: 10px;
-  text-align: left;
-  border-bottom: 1px solid yellow;
-  font-family: 'Oswald', sans-serif;
-}
-
 th{
-  padding: 15px;
+  padding: 20px;
+  color: #0b0f11;
 }
 
 tbody tr{
   height: 30px;
-  background-color: lightskyblue;
-  border-bottom: 1px solid lightgray;
+  background-color: rgb(157, 181, 196);
+  
 }
 
 tbody tr:nth-child(even){
-  background-color: white;
+  background-color: rgb(233, 162, 162);
 }
 
 td {

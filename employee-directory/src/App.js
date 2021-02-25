@@ -41,7 +41,16 @@ class App extends Component {
         <input placeholder="Search by Last Name" type="search" onChange={e => this.handleChange(e)} name="lname" label="input field" />
         </div>
         <table>
-         
+          <thead>
+            <tr>
+              <th>Employee Photo</th>
+              <th onClick={() => this.handleSort("first_name")}>First Name <i className="fas fa-arrows-alt-v"></i></th>
+              <th onClick={() => this.handleSort("last_name")}>Last Name <i className="fas fa-arrows-alt-v"></i></th>
+              <th>Title</th>             
+              <th>Email</th>
+              <th>Gender</th>
+            </tr>
+          </thead>
           <tbody>
             {this.state.employees.map(employeeObject => {
               return (

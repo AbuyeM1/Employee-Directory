@@ -38,7 +38,7 @@ class App extends Component {
       <div className="main">
         <h1>A&M Company </h1>
         <div className="input">
-        <input placeholder="Search by Last Name" type="search" onChange={e => this.handleChange(e)} name="lname" label="input field" />
+        <input placeholder="Search by Name" type="search" onChange={e => this.handleChange(e)} name="lname" label="input field" />
         </div>
         <table>
           <thead>

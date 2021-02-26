@@ -36,7 +36,7 @@ class App extends Component {
     return (
       <div>
       <div className="main">
-        <h1>M&M Company </h1>
+        <h1>A&M Company </h1>
         <div className="input">
         <input placeholder="Search by Last Name" type="search" onChange={e => this.handleChange(e)} name="lname" label="input field" />
         </div>
@@ -56,7 +56,7 @@ class App extends Component {
               return (
                 <EmployeeRow
                   key={employeeObject.id}
-                  avatar={employeeObject.avatar}
+                  img={employeeObject.img}
                   first_name={employeeObject.first_name}
                   last_name={employeeObject.last_name}
                   email={employeeObject.email}
